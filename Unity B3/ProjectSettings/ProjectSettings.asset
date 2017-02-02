@@ -460,7 +460,7 @@ PlayerSettings:
   XboxOnePersistentLocalStorageSize: 0
   vrEditorSettings: {}
   cloudServicesEnabled:
-    Collab: 1
+    Collab: 0
     UNet: 1
   cloudProjectId: 6be51846-b93c-411c-b3d2-c6b24608017b
   projectName: Unity B3
