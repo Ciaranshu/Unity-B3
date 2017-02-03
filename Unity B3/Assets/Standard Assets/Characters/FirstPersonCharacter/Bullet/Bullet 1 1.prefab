@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 54278467433943798}
   - component: {fileID: 114130096660290152}
   - component: {fileID: 96726506987869466}
+  - component: {fileID: 136490660452824658}
   m_Layer: 0
   m_Name: Bullet 1 1
   m_TagString: bullet
@@ -238,6 +239,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 20
   speed: 1000
+--- !u!136 &136490660452824658
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1699210124748886}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &136792630753415320
 CapsuleCollider:
   m_ObjectHideFlags: 1
