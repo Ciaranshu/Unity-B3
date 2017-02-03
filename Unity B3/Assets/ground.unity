@@ -265,7 +265,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 32d9452f3ee3e804890310ee19f4c6dc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -461,7 +461,7 @@ MonoBehaviour:
   targetTr: {fileID: 1242972985}
   dist: 4
   height: 3
-  dampTrace: 20
+  dampTrace: 100
 --- !u!4 &1150233245 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: d5c9dce91d519064880fbf626b817319, type: 3}

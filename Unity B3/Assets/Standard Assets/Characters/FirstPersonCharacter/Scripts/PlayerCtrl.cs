@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerCtrl : MonoBehaviour {
 
-	private float h = 0.0f;
+	//private float h = 0.0f;
 	private float v = 0.0f;
 
 	//分配变量
@@ -23,15 +23,15 @@ public class PlayerCtrl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		h = Input.GetAxis ("Horizontal");
+	//	h = Input.GetAxis ("Horizontal");
 		v = Input.GetAxis ("Vertical");
 
-		Debug.Log ("H=" + h.ToString ());
-		Debug.Log ("V=" + v.ToString ());
+	//	Debug.Log ("H=" + h.ToString ());
+	//	Debug.Log ("V=" + v.ToString ());
 
-		Vector3 moveDir = (Vector3.forward * v) + (Vector3.right * h);
+		Vector3 moveDir = (Vector3.forward * v) ;
 		tr.Translate (moveDir.normalized * Time.deltaTime * moveSpeed, Space.Self);
 
-		tr.Rotate (Vector3.up * Time.deltaTime * rotSpeed * Input.GetAxis ("Mouse X"));
+		tr.Rotate (Vector3.up * Time.deltaTime * rotSpeed * Input.GetAxis ("Horizontal"));
 	}
 }
