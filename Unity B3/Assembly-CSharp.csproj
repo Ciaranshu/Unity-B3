@@ -110,7 +110,7 @@
      <Compile Include="Assets\EnermyScripts\MoveBoss.cs" />
      <Compile Include="Assets\EnermyScripts\MoveGuard.cs" />
      <Compile Include="Assets\EnermyScripts\MoveNecromancer.cs" />
-     <Compile Include="Assets\EnermyScripts\PlayerCtrl.cs" />
+     <Compile Include="Assets\EnermyScripts\PlayerLinkEnermy.cs" />
      <Compile Include="Assets\EnermyScripts\Trigger.cs" />
      <Compile Include="Assets\EnermyScripts\TriggerBoss.cs" />
      <Compile Include="Assets\EnermyScripts\TriggerEnermy.cs" />

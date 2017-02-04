@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerCtrl : MonoBehaviour {
+public class PlayerLinkEnermy : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
