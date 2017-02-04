@@ -5,6 +5,21 @@ TagManager:
   serializedVersion: 2
   tags:
   - Explosion
+  - bullet
+  - Attack1Fire
+  - Attack1FireCore
+  - Attack2Chalk
+  - Attack2ChalkCore
+  - Attack3LightCore
+  - Attack3Light
+  - Boss
+  - BossTrigger
+  - BloodValue
+  - BloodCylinderCore
+  - BloodCylinder
+  - BloodTextCore
+  - BloodTextFront
+  - BloodTextBack
   layers:
   - Default
   - TransparentFX
