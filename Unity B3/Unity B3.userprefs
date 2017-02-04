@@ -1,21 +1,8 @@
-﻿<Properties StartupItem="Assembly-CSharp-firstpass.csproj">
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-<<<<<<< Updated upstream
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FollowCam.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/EnermyScripts/EnermyInfo.cs">
     <Files>
-      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Bullet/MyGizmos.cs" Line="7" Column="27" />
-      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Bullet/FireCtrl.cs" Line="26" Column="3" />
-      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Bullet/BulletControl.cs" Line="9" Column="31" />
-      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FollowCam.cs" Line="15" Column="28" />
-      <File FileName="Assets/Standard Assets/Characters/FirstPersonCharacter/FirstPersonCharacterGuidelines.txt" Line="1" Column="1" />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TriggerBoss.cs">
-    <Files>
-      <File FileName="Assets/Scripts/MoveBoss.cs" Line="24" Column="3" />
-      <File FileName="Assets/Scripts/MoveGuard.cs" Line="5" Column="1" />
-      <File FileName="Assets/Scripts/TriggerBoss.cs" Line="28" Column="4" />
-      <File FileName="Assets/Scripts/EnermyInfo.cs" Line="26" Column="46" />
->>>>>>> Stashed changes
+      <File FileName="Assets/EnermyScripts/EnermyInfo.cs" Line="10" Column="41" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

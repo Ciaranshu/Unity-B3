@@ -11,4 +11,8 @@ public class BulletControl : MonoBehaviour
 	void Start(){
 		GetComponent<Rigidbody>().AddForce(transform.forward*speed);
 	}
+
+	void OnCollisionEnter(Collision Coll){
+		Destroy(this.gameObject);
+	}
 }

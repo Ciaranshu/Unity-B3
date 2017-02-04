@@ -7,7 +7,7 @@ public class EnermyInfo {
 	//-----------------------Player--------------------------//
 	//-------------------------------------------------------------------
 	public const string PlayerTag = "Player";
-	public const string weaponTag = "Player";
+	public const string weaponTag = "bullet";
 
 
 	///////////////////////////////////////////////////////////
