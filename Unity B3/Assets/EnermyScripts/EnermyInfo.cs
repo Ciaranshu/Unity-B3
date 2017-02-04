@@ -73,7 +73,7 @@ public class EnermyInfo {
 	//------------------------Ninja---------------------------//
 	public const string tag_Ninja = "Ninja";
 	public const string tag_NinjaModel = "NinjaModel";
-	public static float f_NinjaMoveSpeed = 0.1f;
+	public static float f_NinjaMoveSpeed = 0.05f;
 	public static float f_NinjaDesSelfTime = 4.0f;
 
 

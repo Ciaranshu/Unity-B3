@@ -12,6 +12,7 @@ public class TriggerEnermy : Trigger {
 	
 
 	protected override void OnTriggerEnter(Collider coll){
+		Debug.Log ("?//");
 		if (coll.gameObject.tag == EnermyInfo.weaponTag) {
 			switch (triggerTag) {
 			case EnermyInfo.tag_Guard:
