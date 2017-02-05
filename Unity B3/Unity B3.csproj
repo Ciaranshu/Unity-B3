@@ -52,9 +52,6 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -70,9 +67,6 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.VR">
       <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
     </Reference>
@@ -87,9 +81,84 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Bullet\BulletControl.cs" />
+    <Compile Include="Assets\EnermyHelp\ParticleSystems\Scripts\AfterburnerPhysicsForce.cs" />
+    <Compile Include="Assets\EnermyHelp\ParticleSystems\Scripts\ExplosionFireAndDebris.cs" />
+    <Compile Include="Assets\EnermyHelp\ParticleSystems\Scripts\ExplosionPhysicsForce.cs" />
+    <Compile Include="Assets\EnermyHelp\ParticleSystems\Scripts\Explosive.cs" />
+    <Compile Include="Assets\EnermyHelp\ParticleSystems\Scripts\ExtinguishableParticleSystem.cs" />
+    <Compile Include="Assets\EnermyHelp\ParticleSystems\Scripts\FireLight.cs" />
+    <Compile Include="Assets\EnermyHelp\ParticleSystems\Scripts\Hose.cs" />
+    <Compile Include="Assets\EnermyHelp\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
+    <Compile Include="Assets\EnermyHelp\ParticleSystems\Scripts\SmokeParticles.cs" />
+    <Compile Include="Assets\EnermyHelp\ParticleSystems\Scripts\WaterHoseParticles.cs" />
+    <Compile Include="Assets\EnermyHelp\ThirdPersonCharacter\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+    <Compile Include="Assets\EnermyHelp\ThirdPersonCharacter\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+    <Compile Include="Assets\EnermyHelp\ThirdPersonCharacter\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+    <Compile Include="Assets\EnermyHelp\ThirdPersonCharacter\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+    <Compile Include="Assets\EnermyHelp\ThirdPersonCharacter\CrossPlatformInput\Scripts\Joystick.cs" />
+    <Compile Include="Assets\EnermyHelp\ThirdPersonCharacter\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+    <Compile Include="Assets\EnermyHelp\ThirdPersonCharacter\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+    <Compile Include="Assets\EnermyHelp\ThirdPersonCharacter\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+    <Compile Include="Assets\EnermyHelp\ThirdPersonCharacter\CrossPlatformInput\Scripts\TiltInput.cs" />
+    <Compile Include="Assets\EnermyHelp\ThirdPersonCharacter\CrossPlatformInput\Scripts\TouchPad.cs" />
+    <Compile Include="Assets\EnermyHelp\ThirdPersonCharacter\CrossPlatformInput\Scripts\VirtualInput.cs" />
+    <Compile Include="Assets\EnermyHelp\ThirdPersonCharacter\Scripts\AICharacterControl.cs" />
+    <Compile Include="Assets\EnermyHelp\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" />
+    <Compile Include="Assets\EnermyHelp\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\ActivateTrigger.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\AlphaButtonClickMask.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\AutoMobileShaderSwitch.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\AutoMoveAndRotate.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\CameraRefocus.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\CurveControlledBob.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\DragRigidbody.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\DynamicShadowSettings.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\EventSystemChecker.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\FOVKick.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\FPSCounter.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\FollowTarget.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\ForcedReset.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\LerpControlledBob.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\ObjectResetter.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\ParticleSystemDestroyer.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\PlatformSpecificContent.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\SimpleActivatorMenu.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\SimpleMouseRotator.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\SmoothFollow.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\TimedObjectActivator.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\TimedObjectDestructor.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\WaypointCircuit.cs" />
+    <Compile Include="Assets\EnermyHelp\Utility\WaypointProgressTracker.cs" />
+    <Compile Include="Assets\EnermyHelp\Water\Scripts\Displace.cs" />
+    <Compile Include="Assets\EnermyHelp\Water\Scripts\GerstnerDisplace.cs" />
+    <Compile Include="Assets\EnermyHelp\Water\Scripts\MeshContainer.cs" />
+    <Compile Include="Assets\EnermyHelp\Water\Scripts\PlanarReflection.cs" />
+    <Compile Include="Assets\EnermyHelp\Water\Scripts\SpecularLighting.cs" />
+    <Compile Include="Assets\EnermyHelp\Water\Scripts\Water.cs" />
+    <Compile Include="Assets\EnermyHelp\Water\Scripts\WaterBase.cs" />
+    <Compile Include="Assets\EnermyHelp\Water\Scripts\WaterTile.cs" />
+    <Compile Include="Assets\EnermyScripts\AttackSkill.cs" />
+    <Compile Include="Assets\EnermyScripts\DesBlood.cs" />
+    <Compile Include="Assets\EnermyScripts\EnermyInfo.cs" />
+    <Compile Include="Assets\EnermyScripts\EnermyMove.cs" />
+    <Compile Include="Assets\EnermyScripts\EnermyMoveNinja.cs" />
+    <Compile Include="Assets\EnermyScripts\MoveBoss.cs" />
+    <Compile Include="Assets\EnermyScripts\MoveGuard.cs" />
+    <Compile Include="Assets\EnermyScripts\MoveNecromancer.cs" />
+    <Compile Include="Assets\EnermyScripts\PlayerLinkEnermy.cs" />
+    <Compile Include="Assets\EnermyScripts\Trigger.cs" />
+    <Compile Include="Assets\EnermyScripts\TriggerBoss.cs" />
+    <Compile Include="Assets\EnermyScripts\TriggerEnermy.cs" />
+    <Compile Include="Assets\EnermyScripts\TriggerTrap.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\EnermyHelp\ParticleSystems\ParticleSystemsGuidelines.txt" />
+    <None Include="Assets\EnermyHelp\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
+    <None Include="Assets\EnermyHelp\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+    <None Include="Assets\EnermyHelp\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+    <None Include="Assets\EnermyHelp\ThirdPersonCharacter\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\EnermyHelp\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+    <None Include="Assets\EnermyHelp\Water\Shaders\FXWaterPro.shader" />
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
@@ -183,11 +252,6 @@
     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
     <None Include="Assets\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
-    <None Include="Assets\Standard Assets\Vehicles\Aircraft\AircraftGuidelines.txt" />
-    <None Include="Assets\Standard Assets\Vehicles\Car\CarGuidelines.txt" />
-    <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
-    <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpec.shader" />
-    <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

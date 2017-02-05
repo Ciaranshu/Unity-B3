@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114644658533751970}
   - component: {fileID: 114662015647990700}
   - component: {fileID: 114080894824249020}
-  - component: {fileID: 114949784801612176}
+  - component: {fileID: 114694203693743662}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -344,6 +344,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 242e3ce8176564fe2918519310359db6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114694203693743662
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1110326373468926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d86a93412adee5478866e5d0dee029e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  ammo: 100
+  isDead: 0
+  moveSpeed: 10
+  rotSpeed: 100
 --- !u!114 &114861272911555054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -355,19 +371,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521b611700410be45810047f0a74e899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114949784801612176
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1110326373468926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24255c732d3cd4c42a5b105059cf5cd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 10
-  rotSpeed: 100
 --- !u!124 &124475717590810404
 Behaviour:
   m_ObjectHideFlags: 1
