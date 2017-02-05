@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/EnermyScenes/NecromancerTest.unity
+- path: Assets/OrdEnermyTest.unity
   isLoaded: 1
   isActive: 1

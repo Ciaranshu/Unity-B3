@@ -152,7 +152,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &579236127
 GameObject:
@@ -235,52 +235,55 @@ Transform:
   m_LocalScale: {x: 50, y: 50, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!1001 &873516003
+--- !u!1001 &783072564
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1242972985}
     m_Modifications:
-    - target: {fileID: 4699034963432058, guid: b69e899f3a7c347eb9a724e9d9e60630, type: 2}
+    - target: {fileID: 400002, guid: d5c9dce91d519064880fbf626b817319, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4699034963432058, guid: b69e899f3a7c347eb9a724e9d9e60630, type: 2}
+    - target: {fileID: 400002, guid: d5c9dce91d519064880fbf626b817319, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4699034963432058, guid: b69e899f3a7c347eb9a724e9d9e60630, type: 2}
+    - target: {fileID: 400002, guid: d5c9dce91d519064880fbf626b817319, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4699034963432058, guid: b69e899f3a7c347eb9a724e9d9e60630, type: 2}
+    - target: {fileID: 400002, guid: d5c9dce91d519064880fbf626b817319, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4699034963432058, guid: b69e899f3a7c347eb9a724e9d9e60630, type: 2}
+    - target: {fileID: 400002, guid: d5c9dce91d519064880fbf626b817319, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4699034963432058, guid: b69e899f3a7c347eb9a724e9d9e60630, type: 2}
+    - target: {fileID: 400002, guid: d5c9dce91d519064880fbf626b817319, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4699034963432058, guid: b69e899f3a7c347eb9a724e9d9e60630, type: 2}
+    - target: {fileID: 400002, guid: d5c9dce91d519064880fbf626b817319, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4699034963432058, guid: b69e899f3a7c347eb9a724e9d9e60630, type: 2}
+    - target: {fileID: 400002, guid: d5c9dce91d519064880fbf626b817319, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b69e899f3a7c347eb9a724e9d9e60630, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: d5c9dce91d519064880fbf626b817319, type: 3}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> parent of fd9cfa5... 更新主角为mesh collider
 --- !u!1 &1080702445
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,7 +450,11 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1242972983}
   m_Material: {fileID: 0}
+<<<<<<< HEAD
   m_IsTrigger: 1
+=======
+  m_IsTrigger: 0
+>>>>>>> parent of fd9cfa5... 更新主角为mesh collider
   m_Enabled: 1
   m_Radius: 0.3
   m_Height: 1.2
@@ -521,4 +528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: {r: 0.9862069, g: 1, b: 0, a: 1}
   radius: 0.05
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of fd9cfa5... 更新主角为mesh collider

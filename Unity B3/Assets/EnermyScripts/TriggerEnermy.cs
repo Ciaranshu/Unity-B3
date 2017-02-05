@@ -12,7 +12,7 @@ public class TriggerEnermy : Trigger {
 	
 
 	protected override void OnTriggerEnter(Collider coll){
-		Debug.Log ("?//");
+		Debug.Log ("?//"+EnermyInfo.tag_Necromancer);
 		if (coll.gameObject.tag == EnermyInfo.weaponTag) {
 			switch (triggerTag) {
 			case EnermyInfo.tag_Guard:
@@ -30,7 +30,10 @@ public class TriggerEnermy : Trigger {
 			default:
 				break;
 			}
-		} 
+		} else if (triggerTag == EnermyInfo.tag_Ninja) {
+			Debug.Log ("【忍者】攻击玩家然后自杀了！");
+			Des ();
+		}
 	}
 
 	protected override void Des(){
