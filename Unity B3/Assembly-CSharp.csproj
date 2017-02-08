@@ -107,6 +107,7 @@
      <Compile Include="Assets\EnermyScripts\EnermyInfo.cs" />
      <Compile Include="Assets\EnermyScripts\EnermyMove.cs" />
      <Compile Include="Assets\EnermyScripts\EnermyMoveNinja.cs" />
+     <Compile Include="Assets\EnermyScripts\EnermyShowTime.cs" />
      <Compile Include="Assets\EnermyScripts\MoveBoss.cs" />
      <Compile Include="Assets\EnermyScripts\MoveGuard.cs" />
      <Compile Include="Assets\EnermyScripts\MoveNecromancer.cs" />
@@ -115,6 +116,7 @@
      <Compile Include="Assets\EnermyScripts\TriggerBoss.cs" />
      <Compile Include="Assets\EnermyScripts\TriggerEnermy.cs" />
      <Compile Include="Assets\EnermyScripts\TriggerTrap.cs" />
+     <Compile Include="Assets\Props\3.Script\Props.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\EnermyHelp\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />

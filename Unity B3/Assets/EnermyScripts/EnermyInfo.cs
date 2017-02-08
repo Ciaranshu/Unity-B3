@@ -85,8 +85,6 @@ public class EnermyInfo {
 	public const string tag_TrapAttack = "TrapAttack";
 
 
-
-
 	public const string tag_TrapTrigger = "TrapTrigger";
 
 }

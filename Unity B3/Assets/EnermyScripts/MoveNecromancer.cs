@@ -26,8 +26,11 @@ public class MoveNecromancer : EnermyMove {
 
 	protected override void move ()
 	{	//towards player
-		modelTrns.RotateAround(transform.position,Vector3.up,
-			Vector3.Angle(transform.forward,playerObj.transform.position));
+		Vector3 temp = playerObj.transform.position;
+		temp.y = modelTrns.localPosition.y;
+		modelTrns.LookAt(temp);
+
+		//call to locate the skill
 		if (skill.getPS ().isStopped) {
 			//Debug.Log ("攻击暂停？");
 			skill.setLookAt (playerObj.transform.position);

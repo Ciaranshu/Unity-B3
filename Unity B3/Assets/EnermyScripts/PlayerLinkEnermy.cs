@@ -35,6 +35,9 @@ public class PlayerLinkEnermy : MonoBehaviour {
 		case EnermyInfo.tag_Ninja:
 			Debug.Log ("玩家被【忍者】攻击");
 			break;
+		case EnermyInfo.tag_Guard:
+			Debug.Log ("玩家被【守卫】攻击");
+			break;
 		default:
 			break;
 		}
