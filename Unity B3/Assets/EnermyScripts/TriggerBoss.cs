@@ -23,7 +23,7 @@ public class TriggerBoss : Trigger {
 
 
 	protected override void OnTriggerEnter(Collider coll){
-		if(coll.tag == EnermyInfo.PlayerTag){
+		if(coll.tag == EnermyInfo.weaponTag){
 			Debug.Log ("【Boss】被玩家攻击了！");
 
 			//还没打败Boss
