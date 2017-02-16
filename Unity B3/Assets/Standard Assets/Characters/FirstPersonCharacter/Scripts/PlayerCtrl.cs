@@ -36,17 +36,17 @@ public class PlayerCtrl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		v = Input.GetAxis ("Vertical");
+	//	v = Input.GetAxis ("Vertical");
 
 	//	Debug.Log ("H=" + h.ToString ());
 	//	Debug.Log ("V=" + v.ToString ());
 
         //主人公移动
-		Vector3 moveDir = (Vector3.forward * v) ;
-		tr.Translate (moveDir.normalized * Time.deltaTime * moveSpeed, Space.Self);
+		//Vector3 moveDir = (Vector3.forward * v) ;
+		//tr.Translate (moveDir.normalized * Time.deltaTime * moveSpeed, Space.Self);
 
         //主人公旋转
-		tr.Rotate (Vector3.up * Time.deltaTime * rotSpeed * Input.GetAxis ("Horizontal"));
+		//tr.Rotate (Vector3.up * Time.deltaTime * rotSpeed * Input.GetAxis ("Horizontal"));
 
         //检测血量
      // if (hp <= 0) StartCoroutine(this.RespawnPlayer());
