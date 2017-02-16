@@ -34,6 +34,10 @@ public class EnermyShowTime : MonoBehaviour {
             }
         }
         isCollisionOver = true;
+        if((int)GameObject.FindGameObjectsWithTag("MONSTER").Length==0)
+        {
+            Destroy(this.gameObject);
+        }
     }
     IEnumerator CreateEnermies()
     {
@@ -41,10 +45,10 @@ public class EnermyShowTime : MonoBehaviour {
         for (int i = 0; i < maxEnermies; i++)
         {
             yield return new WaitForSeconds(createTime);
-            int idx = Random.Range(1, points.Length);
+            int idx = i+1;
             Instantiate(Enermy, points[idx].position, points[idx].rotation);
         }
-
+        
 
     }
 }

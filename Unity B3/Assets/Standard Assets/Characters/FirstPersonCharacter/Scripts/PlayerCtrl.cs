@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class PlayerCtrl : MonoBehaviour {
 
     //初始化血量
-    public float hp =100f; 
+    public int hp =100; 
     //初始化弹药数量
     public float ammo = 100f;
     //死亡状态
@@ -22,6 +23,9 @@ public class PlayerCtrl : MonoBehaviour {
 	//旋转速度变量
 	public float rotSpeed=100.0f;
 
+    public Image hpbar;
+
+    public Text hpnumber;
 	// Use this for initialization
 	void Start () {
 		//向初始部分分配Transform
@@ -74,4 +78,14 @@ public class PlayerCtrl : MonoBehaviour {
         rotSpeed = 100.0f;
         isDead = false;
     }
+    int returnhp()
+    {
+        return hp;
+    }
+    void hit(int blood)
+    {
+        hp -= blood;
+        hpbar.fillAmount = (float)hp / 100;
+        hpnumber.text = hp.ToString();
+    } 
 }
