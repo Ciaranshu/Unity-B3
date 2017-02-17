@@ -12,8 +12,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Vector3 m_CamForward;             // The current forward direction of the camera
         private Vector3 m_Move;
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
-
-        private Transform tr;
+        
+        public float rotSpeed=150.0f;    //rotation speed
+        public float moveSpeed = 4.0f;  //move speed
+        private Transform tr;            //transform for Character
         
         private void Start()
         {
@@ -31,7 +33,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
             // get the third person character ( this should never be null due to require component )
             m_Character = GetComponent<ThirdPersonCharacter>();
-       
+            tr = GetComponent<Transform>();
         }
 
 
@@ -48,7 +50,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 private void FixedUpdate()
                 {
                     // read inputs
-                    float h = CrossPlatformInputManager.GetAxis("Horizontal");
+                  //  float h = CrossPlatformInputManager.GetAxis("Horizontal");
                     float v = CrossPlatformInputManager.GetAxis("Vertical");
 
         bool crouch = Input.GetKey(KeyCode.C);
@@ -57,14 +59,16 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             if (m_Cam != null)
             {
                 // calculate camera relative direction to move:
-                //m_Move = h*m_Cam.right;
-                m_CamForward = Vector3.Scale(m_Cam.forward, new Vector3(1, 0, 1)).normalized;
-                m_Move = v * m_CamForward + h * m_Cam.right;
+                //m_CamForward = Vector3.Scale(m_Cam.forward, new Vector3(1, 0, 1)).normalized;
+                //m_Move = v * m_CamForward + h * m_Cam.right;
+                Vector3 moveDir = Vector3.forward * v;
+                tr.Rotate(Vector2.up * Time.deltaTime * rotSpeed * Input.GetAxis("Horizontal"));
+                tr.Translate(moveDir * Time.deltaTime * moveSpeed, Space.Self);
             }
             else
             {
                 // we use world-relative directions in the case of no main camera
-                m_Move = v*Vector3.forward + h*Vector3.right;
+             //m_Move = v*Vector3.forward + h*Vector3.right;
             }
 #if !MOBILE_INPUT
 			// walk speed multiplier
