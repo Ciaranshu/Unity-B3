@@ -13,6 +13,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Vector3 m_Move;
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
 
+        private Transform tr;
         
         private void Start()
         {
@@ -30,6 +31,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
             // get the third person character ( this should never be null due to require component )
             m_Character = GetComponent<ThirdPersonCharacter>();
+       
         }
 
 
@@ -55,15 +57,14 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             if (m_Cam != null)
             {
                 // calculate camera relative direction to move:
+                //m_Move = h*m_Cam.right;
                 m_CamForward = Vector3.Scale(m_Cam.forward, new Vector3(1, 0, 1)).normalized;
                 m_Move = v * m_CamForward + h * m_Cam.right;
-                //m_CamForward = Vector3.Scale(m_Cam.forward, new Vector3(1, 0, 1)).normalized;
-                //m_Move = v*m_CamForward + h*m_Cam.right;
             }
             else
             {
                 // we use world-relative directions in the case of no main camera
-                //m_Move = v*Vector3.forward + h*Vector3.right;
+                m_Move = v*Vector3.forward + h*Vector3.right;
             }
 #if !MOBILE_INPUT
 			// walk speed multiplier
