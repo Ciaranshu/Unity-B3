@@ -13,6 +13,11 @@ public class BulletControl : MonoBehaviour
 	}
 
 	void OnCollisionEnter(Collision Coll){
-		Destroy(this.gameObject);
+        if (Coll.gameObject.tag != "Player")
+        {
+            Destroy(this.gameObject);
+        }
+
+        Debug.Log(Coll.collider.tag);
 	}
 }

@@ -8,7 +8,7 @@ public class PlayerCtrl : MonoBehaviour {
     //初始化血量
     public int hp =100; 
     //初始化弹药数量
-    public float ammo = 100f;
+    public int ammo = 100;
     //死亡状态
     public bool isDead = false;
     //复活等待时间
@@ -26,30 +26,36 @@ public class PlayerCtrl : MonoBehaviour {
     public Image hpbar;
 
     public Text hpnumber;
+
+    public Text ammoNumber;
 	// Use this for initialization
 	void Start () {
 		//向初始部分分配Transform
 		tr=GetComponent<Transform>();
-
-	}
+        hpbar.fillAmount = (float)hp / 100;
+        hpnumber.text = hp.ToString();
+        ammoNumber.text = ammo.ToString();
+    }
 	
 	// Update is called once per frame
 	void Update () {
+        hpbar.fillAmount = (float)hp / 100;
+        hpnumber.text = hp.ToString();
+        ammoNumber.text = ammo.ToString();
+        //	v = Input.GetAxis ("Vertical");
 
-	//	v = Input.GetAxis ("Vertical");
-
-	//	Debug.Log ("H=" + h.ToString ());
-	//	Debug.Log ("V=" + v.ToString ());
+        //	Debug.Log ("H=" + h.ToString ());
+        //	Debug.Log ("V=" + v.ToString ());
 
         //主人公移动
-		//Vector3 moveDir = (Vector3.forward * v) ;
-		//tr.Translate (moveDir.normalized * Time.deltaTime * moveSpeed, Space.Self);
+        //Vector3 moveDir = (Vector3.forward * v) ;
+        //tr.Translate (moveDir.normalized * Time.deltaTime * moveSpeed, Space.Self);
 
         //主人公旋转
-		//tr.Rotate (Vector3.up * Time.deltaTime * rotSpeed * Input.GetAxis ("Horizontal"));
+        //tr.Rotate (Vector3.up * Time.deltaTime * rotSpeed * Input.GetAxis ("Horizontal"));
 
         //检测血量
-     // if (hp <= 0) StartCoroutine(this.RespawnPlayer());
+        // if (hp <= 0) StartCoroutine(this.RespawnPlayer());
 
     }
 
@@ -87,5 +93,9 @@ public class PlayerCtrl : MonoBehaviour {
         hp -= blood;
         hpbar.fillAmount = (float)hp / 100;
         hpnumber.text = hp.ToString();
+    }
+    public void Fire()
+    {
+        ammo--;
     } 
 }

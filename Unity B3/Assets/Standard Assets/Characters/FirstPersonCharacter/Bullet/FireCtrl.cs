@@ -22,7 +22,7 @@ public class FireCtrl : MonoBehaviour {
 	void Fire(){
 		//dynamically create bullet
 		CreateBullet();
-
+        GameObject.Find("Player").GetComponent<PlayerCtrl>().Fire();
 	}
 
 	void CreateBullet(){

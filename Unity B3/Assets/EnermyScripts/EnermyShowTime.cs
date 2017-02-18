@@ -16,9 +16,9 @@ public class EnermyShowTime : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-
+       
     }
     void OnCollisionEnter(Collision coll)
     {
@@ -31,12 +31,17 @@ public class EnermyShowTime : MonoBehaviour {
                 {
                     StartCoroutine(this.CreateEnermies());
                 }
+                isCollisionOver = true;
             }
         }
-        isCollisionOver = true;
-        if((int)GameObject.FindGameObjectsWithTag("MONSTER").Length==0)
+        
+        if (isCollisionOver ==true)
+        {
+
+            if ((int)GameObject.FindGameObjectsWithTag("Guard").Length==0)
         {
             Destroy(this.gameObject);
+        }
         }
     }
     IEnumerator CreateEnermies()
@@ -48,7 +53,7 @@ public class EnermyShowTime : MonoBehaviour {
             int idx = i+1;
             Instantiate(Enermy, points[idx].position, points[idx].rotation);
         }
-        
+       
 
     }
 }

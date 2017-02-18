@@ -20,6 +20,12 @@ TagManager:
   - BloodTextCore
   - BloodTextFront
   - BloodTextBack
+  - GuardModel
+  - Guard
+  - EnermyTrigger
+  - Floor
+  - EnermyPoints
+  - UI
   layers:
   - Default
   - TransparentFX
